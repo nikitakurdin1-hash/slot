@@ -10,8 +10,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'WMS — Управление складом',
-  description: 'Панель управления складской комплектацией и выполнением заказов',
+  title: 'СЛОТ — WMS для фулфилмента Wildberries FBS',
+  description:
+    'Автоматизация фулфилмента Wildberries FBS. Сканируйте, собирайте и отгружайте заказы в 3 раза быстрее с WMS-системой СЛОТ.',
   generator: 'v0.app',
 }
 
