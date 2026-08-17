@@ -21,7 +21,7 @@ export function ProfileTab() {
           <Warehouse size={26} strokeWidth={2} aria-hidden="true" />
         </span>
         <div className="flex flex-col gap-0.5">
-          <h2 className="text-lg font-semibold tracking-tight">Склад «Восток-1»</h2>
+          <h2 className="font-serif text-lg font-semibold tracking-tight">Склад «Восток-1»</h2>
           <span className="text-xs text-muted-foreground">РЦ · Зона комплектации А</span>
         </div>
       </section>

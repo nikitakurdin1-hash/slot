@@ -8,7 +8,7 @@ export function FinalCta() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              'radial-gradient(500px circle at 50% 0%, rgba(100,255,218,0.14), transparent 60%)',
+              'radial-gradient(500px circle at 50% 0%, rgba(252,238,76,0.14), transparent 60%)',
           }}
         />
         <div className="relative flex flex-col items-center gap-6">
@@ -16,7 +16,7 @@ export function FinalCta() {
             Без карты · Без обязательств
           </span>
           <h2
-            className="max-w-2xl text-balance text-4xl font-extrabold sm:text-5xl"
+            className="max-w-2xl text-balance font-serif text-4xl font-extrabold sm:text-5xl"
             style={{ letterSpacing: '-1.5px' }}
           >
             Попробуйте СЛОТ 5 дней бесплатно

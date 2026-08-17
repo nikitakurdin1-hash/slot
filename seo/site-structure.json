@@ -1,0 +1,87 @@
+{
+  "site": "https://slotwms.ru",
+  "niche": "WMS для маркетплейсов (Wildberries FBS, OZON, Яндекс Маркет)",
+  "note_for_devin": "Ниже — готовая SEO/AI-структура. Страницы / , /privacy и /terms уже реализованы в app/. Остальные (/wms-wildberries, /wms-ozon, /wms-yandex-market, /features, /pricing, /blog) — запланированы: создайте их как app/<slug>/page.tsx, используя export const metadata из этого файла и общие компоненты SiteNav/SiteFooter/дизайн-токены из app/globals.css.",
+  "pages": [
+    {
+      "path": "/",
+      "status": "implemented",
+      "title": "СЛОТ — WMS для фулфилмента Wildberries FBS, OZON и Яндекс Маркет",
+      "metaDescription": "СЛОТ — WMS-система для фулфилмента маркетплейсов. Сканируйте, собирайте и отгружайте заказы Wildberries FBS в 3 раза быстрее.",
+      "h1": "Автоматизация фулфилмента Wildberries FBS",
+      "h2": ["От заказа до отгрузки — четыре шага", "Всё для эффективного склада", "Работаем с ведущими маркетплейсами", "Первый адрес — бесплатно навсегда"],
+      "keywords": ["wms для wildberries", "wms для маркетплейсов", "система управления складом", "автоматизация фулфилмента", "wms fbs"],
+      "schema": ["Organization", "SoftwareApplication", "FAQPage"]
+    },
+    {
+      "path": "/wms-wildberries",
+      "status": "planned",
+      "title": "WMS для Wildberries FBS — автоматизация склада | СЛОТ",
+      "metaDescription": "Готовая WMS для продавцов Wildberries FBS: сканирование, сборка, отгрузка и синхронизация заказов с личным кабинетом WB.",
+      "h1": "WMS для Wildberries FBS",
+      "h2": ["Как СЛОТ работает с Wildberries FBS", "Интеграция с личным кабинетом WB", "Тарифы для продавцов Wildberries"],
+      "keywords": ["wms wildberries", "fbs wildberries автоматизация", "склад для wildberries", "сборка заказов wildberries"],
+      "schema": ["SoftwareApplication", "FAQPage", "BreadcrumbList"]
+    },
+    {
+      "path": "/wms-ozon",
+      "status": "planned",
+      "title": "WMS для OZON — автоматизация фулфилмента | СЛОТ",
+      "metaDescription": "WMS-система СЛОТ для продавцов OZON: сканирование штрихкодов, контроль остатков и быстрая отгрузка заказов.",
+      "h1": "WMS для OZON",
+      "h2": ["Интеграция с OZON Seller", "Сборка и отгрузка заказов OZON", "Тарифы для продавцов OZON"],
+      "keywords": ["wms ozon", "автоматизация склада ozon", "фулфилмент ozon", "сборка заказов ozon"],
+      "schema": ["SoftwareApplication", "FAQPage", "BreadcrumbList"]
+    },
+    {
+      "path": "/wms-yandex-market",
+      "status": "planned",
+      "title": "WMS для Яндекс Маркет — управление складом | СЛОТ",
+      "metaDescription": "СЛОТ автоматизирует комплектацию и отгрузку заказов Яндекс Маркет: от сканирования до передачи в доставку.",
+      "h1": "WMS для Яндекс Маркет",
+      "h2": ["Интеграция с Яндекс Маркет", "Сборка заказов и контроль качества", "Тарифы для продавцов Яндекс Маркет"],
+      "keywords": ["wms яндекс маркет", "автоматизация склада яндекс маркет", "фулфилмент яндекс маркет"],
+      "schema": ["SoftwareApplication", "FAQPage", "BreadcrumbList"]
+    },
+    {
+      "path": "/features",
+      "status": "planned",
+      "title": "Возможности WMS СЛОТ — сканер, аналитика, KPI",
+      "metaDescription": "Мобильный сканер, аналитика в реальном времени, управление персоналом и контроль качества сборки в одной системе.",
+      "h1": "Возможности СЛОТ",
+      "h2": ["Мобильный сканер без спецоборудования", "Аналитика и KPI сотрудников", "Контроль качества сборки"],
+      "keywords": ["возможности wms", "мобильный сканер штрихкодов склад", "аналитика склада маркетплейс"],
+      "schema": ["SoftwareApplication", "BreadcrumbList"]
+    },
+    {
+      "path": "/pricing",
+      "status": "planned",
+      "title": "Тарифы СЛОТ — первый адрес бесплатно",
+      "metaDescription": "Первый адрес хранения бесплатно навсегда. Дополнительные адреса от 2 900 ₽/месяц. 5 дней демо-доступа без карты.",
+      "h1": "Тарифы СЛОТ WMS",
+      "h2": ["Тариф Старт — бесплатно", "Тариф Бизнес — для сетей складов", "Часто задаваемые вопросы о тарифах"],
+      "keywords": ["тарифы wms", "стоимость wms для маркетплейса", "бесплатная wms система"],
+      "schema": ["Product", "Offer", "FAQPage", "BreadcrumbList"]
+    },
+    {
+      "path": "/blog",
+      "status": "planned",
+      "title": "Блог СЛОТ — гайды по фулфилменту маркетплейсов",
+      "metaDescription": "Статьи и инструкции по автоматизации склада, работе с FBS Wildberries, OZON и Яндекс Маркет.",
+      "h1": "Блог о фулфилменте маркетплейсов",
+      "h2": ["Последние статьи", "Категории: Wildberries, OZON, Яндекс Маркет, Склад"],
+      "keywords": ["блог фулфилмент", "гайд wildberries fbs", "статьи склад маркетплейс"],
+      "schema": ["Blog", "BreadcrumbList"]
+    }
+  ],
+  "aiIndexing": {
+    "llmsTxt": "/public/llms.txt — уже создан, описывает продукт, тарифы и FAQ в формате, понятном AI-краулерам (GPTBot, ClaudeBot, PerplexityBot).",
+    "schemaOrgUsed": {
+      "Organization": "app/layout.tsx — контакты, название, логотип компании",
+      "SoftwareApplication": "рекомендуется добавить на / и все /wms-* страницы — категория WMS, цена от 0 ₽",
+      "FAQPage": "рекомендуется на / (в секции FAQ) и на /pricing",
+      "BreadcrumbList": "рекомендуется на всех вложенных страницах (/wms-*, /features, /pricing, /blog)"
+    },
+    "answerFormatGuideline": "Каждая страница должна отвечать на прямой вопрос пользователя в первом абзаце (H1 + 1-2 предложения с фактами: что это, для кого, сколько стоит) — это увеличивает шанс попадания в AI-ответы (Perplexity, ChatGPT, Gemini)."
+  }
+}

@@ -4,10 +4,10 @@ import { Package, Clock, CheckCircle2, TrendingUp } from 'lucide-react'
 import { orders, statusMeta } from './data'
 
 const stats = [
-  { label: 'Активные заказы', value: '42', icon: Package, tint: '#64ffda' },
-  { label: 'В очереди', value: '17', icon: Clock, tint: '#ffd479' },
+  { label: 'Активные заказы', value: '42', icon: Package, tint: '#fcee4c' },
+  { label: 'В очереди', value: '17', icon: Clock, tint: '#ffb84d' },
   { label: 'Собрано сегодня', value: '128', icon: CheckCircle2, tint: '#7aa2ff' },
-  { label: 'Выполнение', value: '94%', icon: TrendingUp, tint: '#64ffda' },
+  { label: 'Выполнение', value: '94%', icon: TrendingUp, tint: '#fcee4c' },
 ]
 
 export function OrdersTab() {

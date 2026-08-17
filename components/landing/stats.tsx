@@ -12,7 +12,7 @@ export function Stats() {
         {STATS.map((s) => (
           <div key={s.label} className="flex flex-col gap-1">
             <span
-              className="text-4xl font-extrabold text-accent sm:text-5xl"
+              className="font-serif text-4xl font-extrabold text-accent sm:text-5xl"
               style={{ letterSpacing: '-1.5px' }}
             >
               {s.value}

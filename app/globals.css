@@ -10,11 +10,18 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-primary: var(--accent);
+  --color-primary-foreground: var(--accent-foreground);
+  --color-secondary: var(--muted);
+  --color-secondary-foreground: var(--foreground);
   --color-border: var(--border);
+  --color-input: var(--border);
+  --color-ring: var(--accent);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-manrope), var(--font-inter), ui-sans-serif, sans-serif;
 
   --radius-sm: 10px;
   --radius-md: 12px;
@@ -22,19 +29,24 @@
   --radius-xl: 20px;
 }
 
+/*
+ * Единый фирменный стиль SLOT WMS (slotwms.ru).
+ * Значения токенов взяты напрямую с продакшен-сайта:
+ * --background: #050505, --accent: #FCEE4C, radius: 16px, font body: Inter, font heading: Manrope 800.
+ */
 :root {
   color-scheme: dark;
-  --background: #06060f;
-  --foreground: #eaf0f6;
-  --card: rgba(22, 33, 62, 0.7);
-  --card-foreground: #eaf0f6;
-  --muted: rgba(255, 255, 255, 0.04);
-  --muted-foreground: #8a93a6;
-  --accent: #64ffda;
-  --accent-foreground: #06060f;
-  --border: rgba(255, 255, 255, 0.08);
-  --destructive: #ff6b81;
-  --destructive-foreground: #06060f;
+  --background: #050505;
+  --foreground: #f5f5f2;
+  --card: rgba(255, 255, 255, 0.035);
+  --card-foreground: #f5f5f2;
+  --muted: rgba(255, 255, 255, 0.05);
+  --muted-foreground: #9a9a95;
+  --accent: #fcee4c;
+  --accent-foreground: #0a0a05;
+  --border: rgba(255, 255, 255, 0.1);
+  --destructive: #ff5c5c;
+  --destructive-foreground: #0a0a05;
 }
 
 @layer base {
@@ -47,21 +59,26 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    letter-spacing: -0.3px;
+    letter-spacing: -0.2px;
     -webkit-font-smoothing: antialiased;
   }
 }
 
 @layer utilities {
+  /*
+   * Реальный slotwms.ru использует плоские карточки с тонкой рамкой,
+   * а не тяжёлый glassmorphism — оставляем лёгкий блюр для глубины,
+   * но приоритет отдаём читаемости и простоте (нативный интерфейс).
+   */
   .glass {
     background: var(--card);
-    backdrop-filter: blur(18px) saturate(140%);
-    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
     border: 1px solid var(--border);
   }
   .glass-accent {
-    box-shadow: 0 0 0 1px rgba(100, 255, 218, 0.25),
-      0 8px 30px -12px rgba(100, 255, 218, 0.25);
+    box-shadow: 0 0 0 1px rgba(252, 238, 76, 0.25),
+      0 8px 30px -12px rgba(252, 238, 76, 0.2);
   }
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -72,14 +89,14 @@
   }
 }
 
-/* ambient glow behind the app */
+/* лёгкое фоновое свечение — минимально, без лишней декоративности */
 .app-glow::before {
   content: '';
   position: fixed;
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(600px circle at 50% -10%, rgba(100, 255, 218, 0.08), transparent 60%),
-    radial-gradient(500px circle at 100% 100%, rgba(80, 120, 220, 0.06), transparent 55%);
+    radial-gradient(600px circle at 50% -10%, rgba(252, 238, 76, 0.06), transparent 60%),
+    radial-gradient(500px circle at 100% 100%, rgba(252, 238, 76, 0.03), transparent 55%);
   z-index: 0;
 }

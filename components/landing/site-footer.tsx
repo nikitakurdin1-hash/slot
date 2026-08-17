@@ -22,17 +22,17 @@ export function SiteFooter() {
             </div>
             <div className="flex flex-col gap-3">
               <span className="text-sm font-bold">Документы</span>
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground">Политика конфиденциальности</a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground">Условия использования</a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground">Оферта</a>
+              <a href="/privacy" className="text-sm text-muted-foreground hover:text-foreground">Политика конфиденциальности</a>
+              <a href="/terms" className="text-sm text-muted-foreground hover:text-foreground">Условия использования</a>
+              <a href="/terms#offer" className="text-sm text-muted-foreground hover:text-foreground">Оферта</a>
             </div>
             <div className="flex flex-col gap-3">
               <span className="text-sm font-bold">Контакты</span>
-              <a href="tel:+78001234567" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
-                <Phone className="h-4 w-4 text-accent" /> 8 800 123-45-67
+              <a href="tel:+79204596474" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
+                <Phone className="h-4 w-4 text-accent" /> +7 (920) 459-64-74
               </a>
-              <a href="mailto:hello@slot.io" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
-                <Mail className="h-4 w-4 text-accent" /> hello@slot.io
+              <a href="mailto:info@slotwms.ru" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
+                <Mail className="h-4 w-4 text-accent" /> info@slotwms.ru
               </a>
               <span className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-accent" /> Москва, Россия

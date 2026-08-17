@@ -5,8 +5,8 @@ import { Phone, Trash2, UserPlus } from 'lucide-react'
 import { initialStaff, type Staff } from './data'
 
 const shiftColor: Record<string, string> = {
-  Утро: '#ffd479',
-  День: '#64ffda',
+  Утро: '#ffb84d',
+  День: '#fcee4c',
   Ночь: '#7aa2ff',
 }
 

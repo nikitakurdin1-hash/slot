@@ -48,7 +48,7 @@ export function Features() {
           Возможности
         </span>
         <h2
-          className="max-w-2xl text-balance text-3xl font-extrabold sm:text-4xl"
+          className="max-w-2xl text-balance font-serif text-3xl font-extrabold sm:text-4xl"
           style={{ letterSpacing: '-1px' }}
         >
           Всё для эффективного склада
@@ -64,7 +64,7 @@ export function Features() {
             <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
               <f.icon className="h-6 w-6" />
             </span>
-            <h3 className="text-lg font-bold">{f.title}</h3>
+            <h3 className="font-serif text-lg font-bold">{f.title}</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               {f.text}
             </p>

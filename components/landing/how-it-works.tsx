@@ -31,7 +31,7 @@ export function HowItWorks() {
           Как это работает
         </span>
         <h2
-          className="max-w-2xl text-balance text-3xl font-extrabold sm:text-4xl"
+          className="max-w-2xl text-balance font-serif text-3xl font-extrabold sm:text-4xl"
           style={{ letterSpacing: '-1px' }}
         >
           От заказа до отгрузки — четыре шага
@@ -50,7 +50,7 @@ export function HowItWorks() {
             <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
               <step.icon className="h-6 w-6" />
             </span>
-            <h3 className="text-lg font-bold">{step.title}</h3>
+            <h3 className="font-serif text-lg font-bold">{step.title}</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               {step.text}
             </p>

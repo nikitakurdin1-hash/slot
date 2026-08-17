@@ -53,7 +53,7 @@ export const orders: Order[] = [
 
 export const statusMeta: Record<OrderStatus, { label: string; color: string }> = {
   new: { label: 'Новый', color: '#7aa2ff' },
-  picking: { label: 'Сборка', color: '#64ffda' },
-  packed: { label: 'Упакован', color: '#ffd479' },
+  picking: { label: 'Сборка', color: '#fcee4c' },
+  packed: { label: 'Упакован', color: '#ffb84d' },
   shipped: { label: 'Отгружен', color: '#8a93a6' },
 }

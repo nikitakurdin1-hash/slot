@@ -14,7 +14,7 @@ export function Integrations() {
             Интеграции
           </span>
           <h2
-            className="text-balance text-3xl font-extrabold sm:text-4xl"
+            className="text-balance font-serif text-3xl font-extrabold sm:text-4xl"
             style={{ letterSpacing: '-1px' }}
           >
             Работаем с ведущими маркетплейсами

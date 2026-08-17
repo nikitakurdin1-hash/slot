@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { BarChart3, Building2, ShoppingBag, PackageSearch } from 'lucide-react'
+import { LogoMark } from '@/components/landing/site-nav'
 import { OrdersTab } from './orders-tab'
 import { ProfileTab } from './profile-tab'
 import { ClientsTab } from './clients-tab'
@@ -31,9 +32,12 @@ export function Dashboard() {
       <div className="relative z-10 mx-auto flex min-h-dvh w-full max-w-[480px] flex-col">
         <header className="sticky top-0 z-20 flex flex-col gap-4 px-4 pb-3 pt-5 backdrop-blur-xl bg-[color:var(--background)]/70 border-b border-border">
           <div className="flex items-center justify-between">
-            <div className="flex flex-col">
-              <span className="text-[11px] uppercase tracking-[0.18em] text-accent">WMS</span>
-              <h1 className="text-xl font-semibold tracking-tight">{titles[active]}</h1>
+            <div className="flex items-center gap-2.5">
+              <LogoMark size={26} />
+              <div className="flex flex-col">
+                <span className="text-[11px] uppercase tracking-[0.18em] text-accent">СЛОТ WMS</span>
+                <h1 className="font-serif text-xl font-semibold tracking-tight">{titles[active]}</h1>
+              </div>
             </div>
             <span className="flex items-center gap-2 rounded-full glass px-3 py-1.5 text-xs text-muted-foreground">
               <span className="h-2 w-2 rounded-full bg-accent shadow-[0_0_8px_var(--accent)]" />

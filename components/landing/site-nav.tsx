@@ -1,19 +1,46 @@
 import Link from 'next/link'
 
+/**
+ * Знак логотипа — три уложенных шеврона (динамика/движение груза по складу).
+ * ВАЖНО ДЛЯ DEVIN: это временная реконструкция фирменного знака slotwms.ru
+ * средствами SVG. Если у вас есть оригинальный файл лого (SVG/PNG) —
+ * замените содержимое <LogoMark /> на <img src="/logo.svg" ... /> без
+ * изменения остальной структуры компонента.
+ */
+export function LogoMark({ size = 28 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill="none"
+      aria-hidden="true"
+      className="shrink-0"
+    >
+      <path d="M4 6L14 16L4 26" stroke="#fcee4c" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M15 6L25 16L15 26" stroke="#fcee4c" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.45" />
+    </svg>
+  )
+}
+
 export function Logo({ size = 'md' }: { size?: 'md' | 'lg' }) {
   const text = size === 'lg' ? 'text-4xl' : 'text-2xl'
   const tag = size === 'lg' ? 'text-sm' : 'text-[11px]'
+  const mark = size === 'lg' ? 34 : 24
   return (
-    <div className="flex flex-col leading-none">
-      <span
-        className={`${text} font-extrabold tracking-tight text-foreground`}
-        style={{ letterSpacing: '-1px' }}
-      >
-        СЛОТ<span className="text-accent">.</span>
-      </span>
-      <span className={`${tag} mt-1 font-medium text-muted-foreground`}>
-        WMS для фулфилмента
-      </span>
+    <div className="flex items-center gap-2">
+      <LogoMark size={mark} />
+      <div className="flex flex-col leading-none">
+        <span
+          className={`${text} font-serif font-extrabold tracking-tight text-foreground`}
+          style={{ letterSpacing: '-1px' }}
+        >
+          СЛОТ<span className="text-accent">.</span>
+        </span>
+        <span className={`${tag} mt-1 font-medium text-muted-foreground`}>
+          WMS для фулфилмента
+        </span>
+      </div>
     </div>
   )
 }

@@ -106,7 +106,7 @@ export function ClientsTab() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
-              <h3 className="text-base font-semibold">
+              <h3 className="font-serif text-base font-semibold">
                 {clients.some((c) => c.id === editing.id) ? 'Редактировать клиента' : 'Новый клиент'}
               </h3>
               <button

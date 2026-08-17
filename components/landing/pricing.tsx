@@ -42,7 +42,7 @@ export function Pricing() {
           Тарифы
         </span>
         <h2
-          className="max-w-2xl text-balance text-3xl font-extrabold sm:text-4xl"
+          className="max-w-2xl text-balance font-serif text-3xl font-extrabold sm:text-4xl"
           style={{ letterSpacing: '-1px' }}
         >
           Первый адрес — бесплатно навсегда
@@ -67,7 +67,7 @@ export function Pricing() {
               </span>
             )}
             <div className="flex flex-col gap-2">
-              <h3 className="text-xl font-bold">{plan.name}</h3>
+              <h3 className="font-serif text-xl font-bold">{plan.name}</h3>
               <p className="text-sm text-muted-foreground">{plan.desc}</p>
             </div>
             <div className="flex items-baseline gap-1">

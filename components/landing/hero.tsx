@@ -14,14 +14,14 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(180deg, rgba(6,6,15,0.55) 0%, rgba(6,6,15,0.82) 60%, rgba(6,6,15,0.95) 100%)',
+              'linear-gradient(180deg, rgba(5,5,5,0.55) 0%, rgba(5,5,5,0.82) 60%, rgba(5,5,5,0.96) 100%)',
           }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(700px circle at 15% 0%, rgba(100,255,218,0.12), transparent 55%)',
+              'radial-gradient(700px circle at 15% 0%, rgba(252,238,76,0.1), transparent 55%)',
           }}
         />
 
@@ -33,7 +33,7 @@ export function Hero() {
           </span>
 
           <h1
-            className="max-w-3xl text-pretty text-4xl font-extrabold leading-[1.05] sm:text-6xl"
+            className="max-w-3xl text-pretty font-serif text-4xl font-extrabold leading-[1.05] sm:text-6xl"
             style={{ letterSpacing: '-1.5px' }}
           >
             Автоматизация фулфилмента{' '}
