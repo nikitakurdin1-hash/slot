@@ -18,8 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Запланированные страницы — см. /seo/site-structure.json для meta/keywords/schema.
     // { url: `${SITE_URL}/wms-wildberries`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
-    // { url: `${SITE_URL}/wms-ozon`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
-    // { url: `${SITE_URL}/wms-yandex-market`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+    // { url: `${SITE_URL}/chestnyy-znak`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     // { url: `${SITE_URL}/features`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // { url: `${SITE_URL}/pricing`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     // { url: `${SITE_URL}/blog`, lastModified: now, changeFrequency: 'daily', priority: 0.6 },

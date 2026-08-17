@@ -1,8 +1,7 @@
 const PARTNERS = [
   { name: 'Wildberries', short: 'WB', primary: true },
-  { name: 'Ozon', short: 'OZON', primary: false },
-  { name: 'Яндекс Маркет', short: 'ЯМ', primary: false },
-  { name: 'СберМегаМаркет', short: 'СММ', primary: false },
+  { name: 'Честный ЗНАК', short: 'КИЗ', primary: false },
+  { name: 'Android', short: 'APK', primary: false },
 ]
 
 export function Integrations() {
@@ -17,15 +16,15 @@ export function Integrations() {
             className="text-balance font-serif text-3xl font-extrabold sm:text-4xl"
             style={{ letterSpacing: '-1px' }}
           >
-            Работаем с ведущими маркетплейсами
+            Прямая интеграция с Wildberries
           </h2>
           <p className="mx-auto max-w-lg text-pretty text-muted-foreground">
-            Прямая интеграция с Wildberries FBS. Заказы, поставки и статусы
-            синхронизируются автоматически.
+            Заказы, остатки и поставки синхронизируются с WB API автоматически.
+            Плюс нативная работа с Честным ЗНАКом и Android-приложение.
           </p>
         </div>
 
-        <div className="grid w-full grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-3">
           {PARTNERS.map((p) => (
             <div
               key={p.name}

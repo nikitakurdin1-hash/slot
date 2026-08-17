@@ -9,7 +9,8 @@ export function SiteFooter() {
           <div className="flex flex-col gap-4">
             <Logo size="lg" />
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Готовое WMS-решение для автоматизации фулфилмента на маркетплейсах.
+              WMS-система для фулфилмента и селлеров Wildberries: сканирование
+              камерой, работа с КИЗами, интеграция с WB API.
             </p>
           </div>
 
@@ -43,9 +44,11 @@ export function SiteFooter() {
 
         <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
           <span className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} СЛОТ. Все права защищены.
+            © {new Date().getFullYear()} СЛОТ WMS. Все права защищены.
           </span>
-          <span className="text-xs text-muted-foreground">ООО «СЛОТ» · ИНН 7700000000</span>
+          <span className="text-xs text-muted-foreground">
+            ИП Курдин Никита Владимирович · ИНН [уточнить] · ОГРНИП [уточнить]
+          </span>
         </div>
       </div>
     </footer>

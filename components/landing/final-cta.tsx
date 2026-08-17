@@ -19,17 +19,17 @@ export function FinalCta() {
             className="max-w-2xl text-balance font-serif text-4xl font-extrabold sm:text-5xl"
             style={{ letterSpacing: '-1.5px' }}
           >
-            Попробуйте СЛОТ 5 дней бесплатно
+            Попробуйте СЛОТ WMS 5 дней бесплатно
           </h2>
           <p className="max-w-lg text-pretty text-lg text-muted-foreground">
-            Подключите склад за 10 минут и ускорьте сборку заказов уже сегодня.
+            Подключите склад за 1 день и снизьте ошибки сборки уже на этой неделе.
           </p>
           <div className="flex flex-col gap-3 pt-2 sm:flex-row">
             <a
               href="/dashboard"
               className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-accent px-8 text-base font-bold text-accent-foreground transition-transform hover:scale-[1.03]"
             >
-              Начать бесплатно
+              Записаться на демо
             </a>
             <a
               href="#"
