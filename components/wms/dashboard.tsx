@@ -1,20 +1,45 @@
 'use client'
 
 import { useState } from 'react'
-import { BarChart3, Building2, ShoppingBag, PackageSearch } from 'lucide-react'
+import {
+  BarChart3,
+  Building2,
+  ShoppingBag,
+  PackageSearch,
+  Package,
+  Warehouse,
+  LayoutGrid,
+  ClipboardList,
+} from 'lucide-react'
 import { LogoMark } from '@/components/landing/site-nav'
 import { OrdersTab } from './orders-tab'
 import { ProfileTab } from './profile-tab'
 import { ClientsTab } from './clients-tab'
 import { PickerTab } from './picker-tab'
+import { GoodsTab } from './goods-tab'
+import { WarehouseTab } from './warehouse-tab'
+import { PlanTab } from './plan-tab'
+import { RequestsTab } from './requests-tab'
 
-type TabId = 'orders' | 'profile' | 'clients' | 'picker'
+type TabId =
+  | 'orders'
+  | 'profile'
+  | 'clients'
+  | 'picker'
+  | 'goods'
+  | 'warehouse'
+  | 'plan'
+  | 'requests'
 
 const tabs: { id: TabId; label: string; icon: typeof BarChart3 }[] = [
   { id: 'orders', label: 'Заказы', icon: BarChart3 },
   { id: 'profile', label: 'Профиль', icon: Building2 },
   { id: 'clients', label: 'Клиенты', icon: ShoppingBag },
   { id: 'picker', label: 'Сборщик', icon: PackageSearch },
+  { id: 'goods', label: 'Товары', icon: Package },
+  { id: 'warehouse', label: 'Склад', icon: Warehouse },
+  { id: 'plan', label: 'План', icon: LayoutGrid },
+  { id: 'requests', label: 'Заявки', icon: ClipboardList },
 ]
 
 const titles: Record<TabId, string> = {
@@ -22,6 +47,10 @@ const titles: Record<TabId, string> = {
   profile: 'Профиль склада',
   clients: 'Клиенты',
   picker: 'Комплектовщики',
+  goods: 'Товары',
+  warehouse: 'Склад',
+  plan: 'План склада',
+  requests: 'Заявки',
 }
 
 export function Dashboard() {
@@ -76,6 +105,10 @@ export function Dashboard() {
           {active === 'profile' && <ProfileTab />}
           {active === 'clients' && <ClientsTab />}
           {active === 'picker' && <PickerTab />}
+          {active === 'goods' && <GoodsTab />}
+          {active === 'warehouse' && <WarehouseTab />}
+          {active === 'plan' && <PlanTab />}
+          {active === 'requests' && <RequestsTab />}
         </main>
       </div>
     </div>
