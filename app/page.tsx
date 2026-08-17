@@ -2,6 +2,7 @@ import Script from 'next/script'
 import { SiteNav } from '@/components/landing/site-nav'
 import { Hero } from '@/components/landing/hero'
 import { HowItWorks } from '@/components/landing/how-it-works'
+import { WarehouseGallery } from '@/components/landing/warehouse-gallery'
 import { Features } from '@/components/landing/features'
 import { Stats } from '@/components/landing/stats'
 import { Integrations } from '@/components/landing/integrations'
@@ -34,6 +35,7 @@ export default function Page() {
         <main>
           <Hero />
           <HowItWorks />
+          <WarehouseGallery />
           <Features />
           <Stats />
           <Integrations />
