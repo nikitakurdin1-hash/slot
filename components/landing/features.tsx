@@ -1,42 +1,42 @@
 import {
+  ScanLine,
+  Volume2,
   Smartphone,
-  BarChart3,
+  Link2,
   Users,
   Boxes,
-  Bell,
-  ShieldCheck,
 } from 'lucide-react'
 
 const FEATURES = [
   {
-    icon: Smartphone,
-    title: 'Мобильный сканер',
-    text: 'Превратите смартфон в терминал сбора данных. Камера сканирует штрихкоды без доп. оборудования.',
+    icon: ScanLine,
+    title: 'Сканер камерой',
+    text: 'Распознавание штрихкодов, EAN-13, DataMatrix. Нативная камера без задержек.',
   },
   {
-    icon: BarChart3,
-    title: 'Аналитика в реальном времени',
-    text: 'Скорость сборки, загрузка сотрудников и статусы заказов на одном дашборде.',
+    icon: Volume2,
+    title: 'Звуковые подсказки',
+    text: 'Сигналы при сканировании — сотрудник работает быстрее и точнее.',
+  },
+  {
+    icon: Smartphone,
+    title: 'Android приложение',
+    text: 'APK устанавливается на любой телефон. Не требует Google Play.',
+  },
+  {
+    icon: Link2,
+    title: 'WB API интеграция',
+    text: 'Заказы, остатки, поставки — прямая синхронизация с Wildberries.',
   },
   {
     icon: Users,
-    title: 'Управление персоналом',
-    text: 'Роли, смены и KPI каждого сборщика. Прозрачная мотивация и учёт выработки.',
+    title: 'Роли и доступы',
+    text: 'Владелец, сотрудники, клиенты — каждый видит только своё.',
   },
   {
     icon: Boxes,
-    title: 'Учёт остатков',
-    text: 'Актуальные остатки по ячейкам и адресам хранения с историей движений.',
-  },
-  {
-    icon: Bell,
-    title: 'Уведомления',
-    text: 'Оповещения о новых заказах, дедлайнах поставок и ошибках комплектации.',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Контроль качества',
-    text: 'Двойная проверка комплектности исключает пересорт и возвраты покупателей.',
+    title: 'Остатки и статистика',
+    text: 'Учёт остатков, синхронизация с WB, история движений.',
   },
 ]
 
@@ -51,8 +51,11 @@ export function Features() {
           className="max-w-2xl text-balance font-serif text-3xl font-extrabold sm:text-4xl"
           style={{ letterSpacing: '-1px' }}
         >
-          Всё для эффективного склада
+          Возможности СЛОТ WMS
         </h2>
+        <p className="max-w-xl text-pretty text-muted-foreground">
+          Всё, что нужно для работы современного фулфилмента
+        </p>
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -1,4 +1,4 @@
-import { Download } from 'lucide-react'
+const TRUST_BADGES = ['5 дней бесплатно', 'Подключение за 1 день', 'Без карты']
 
 export function Hero() {
   return (
@@ -29,20 +29,20 @@ export function Hero() {
         <div className="relative flex flex-col items-start gap-6 px-6 py-16 sm:px-12 sm:py-24 lg:py-28">
           <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold text-accent">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Wildberries FBS · Ozon · Яндекс Маркет
+            Для фулфилмента и селлеров на МП
           </span>
 
           <h1
             className="max-w-3xl text-pretty font-serif text-4xl font-extrabold leading-[1.05] sm:text-6xl"
             style={{ letterSpacing: '-1.5px' }}
           >
-            Автоматизация фулфилмента{' '}
-            <span className="text-accent">Wildberries FBS</span>
+            WMS, которая снижает <span className="text-accent">ошибки сборки до нуля</span>
           </h1>
 
           <p className="max-w-xl text-pretty text-lg text-muted-foreground sm:text-xl">
-            Сканируйте, собирайте, отгружайте в 3 раза быстрее. Готовое WMS-решение
-            для складов и фулфилмент-операторов.
+            СЛОТ WMS убирает путаницу с заказами, автоматизирует работу с КИЗами и
+            даёт прозрачный учёт фулфилмента. Без Excel, без ручного контроля, без
+            упущенной выручки.
           </p>
 
           <div className="flex flex-col gap-3 pt-2 sm:flex-row">
@@ -50,15 +50,23 @@ export function Hero() {
               href="#cta"
               className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-accent px-7 text-base font-bold text-accent-foreground transition-transform hover:scale-[1.03]"
             >
-              Начать бесплатно
+              Записаться на демо
             </a>
             <a
-              href="#cta"
-              className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl border border-border bg-background/40 px-7 text-base font-semibold text-foreground backdrop-blur transition-colors hover:bg-muted"
+              href="#how"
+              className="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-border bg-background/40 px-7 text-base font-semibold text-foreground backdrop-blur transition-colors hover:bg-muted"
             >
-              <Download className="h-5 w-5" />
-              Скачать приложение
+              Как это работает
             </a>
+          </div>
+
+          <div className="flex flex-wrap gap-x-6 gap-y-2 pt-1">
+            {TRUST_BADGES.map((b) => (
+              <span key={b} className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                {b}
+              </span>
+            ))}
           </div>
         </div>
       </div>

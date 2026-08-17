@@ -3,23 +3,23 @@ import { FileDown, ScanLine, PackageCheck, Truck } from 'lucide-react'
 const STEPS = [
   {
     icon: FileDown,
-    title: 'Загрузка заказов',
-    text: 'Заказы автоматически подтягиваются из личного кабинета Wildberries FBS.',
+    title: 'Подключите кабинет',
+    text: 'API-ключ Wildberries. Заказы подтягиваются автоматически.',
   },
   {
     icon: ScanLine,
-    title: 'Сканирование',
-    text: 'Сотрудник сканирует товары штрихкод-сканером прямо с телефона.',
+    title: 'Собирайте заказы',
+    text: 'Сканер камерой проверяет штрихкоды и Честный ЗНАК.',
   },
   {
     icon: PackageCheck,
-    title: 'Сборка',
-    text: 'Система проверяет комплектность и формирует задание на упаковку.',
+    title: 'Упаковывайте',
+    text: 'ШК коробов от WB, печать этикеток, наклейка.',
   },
   {
     icon: Truck,
-    title: 'Отгрузка',
-    text: 'Готовые короба маркируются и передаются в поставку одним нажатием.',
+    title: 'Отгружайте',
+    text: 'Фиксация поставки в WB API одним нажатием.',
   },
 ]
 
@@ -34,7 +34,7 @@ export function HowItWorks() {
           className="max-w-2xl text-balance font-serif text-3xl font-extrabold sm:text-4xl"
           style={{ letterSpacing: '-1px' }}
         >
-          От заказа до отгрузки — четыре шага
+          Четыре простых шага от заказа до отгрузки
         </h2>
       </div>
 

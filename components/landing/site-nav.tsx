@@ -46,10 +46,11 @@ export function Logo({ size = 'md' }: { size?: 'md' | 'lg' }) {
 }
 
 const NAV = [
-  { label: 'Как это работает', href: '#how' },
+  { label: 'Боли', href: '#pains' },
+  { label: 'Решение', href: '#solution' },
   { label: 'Возможности', href: '#features' },
   { label: 'Тарифы', href: '#pricing' },
-  { label: 'Интеграции', href: '#integrations' },
+  { label: 'Кейсы', href: '#case' },
 ]
 
 export function SiteNav() {
@@ -83,7 +84,7 @@ export function SiteNav() {
             href="#cta"
             className="inline-flex min-h-[44px] items-center rounded-xl bg-accent px-5 text-sm font-bold text-accent-foreground transition-transform hover:scale-[1.03]"
           >
-            Начать бесплатно
+            Демо
           </a>
         </div>
       </div>
